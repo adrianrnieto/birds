@@ -1,0 +1,46 @@
+﻿@page "/"
+@using Birds.Shared
+@inject HttpClient Http
+
+<h1>Birds!</h1>
+
+@if (@question is not null)
+{
+    <img src="@question.ImageUrl" width="800" height="600" />
+
+    <p>
+        @for (var i = 0; i < 4; i++)
+        {
+            var imageId = i;
+            <button class="btn btn-secondary" @onclick="@(e => CheckCorrect(e, imageId))">@question.Answers[imageId]</button>
+        }
+    </p>
+
+    <p>
+        <button class="btn btn-primary" @onclick="LoadQuestionAsync">Siguiente pregunta</button>
+    </p>
+}
+
+<p>Respuesta: @status</p>
+
+@code {
+    private Question question;
+    private string status = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadQuestionAsync();
+    }
+
+    private void CheckCorrect(MouseEventArgs _, int answerIndex)
+    {
+        status = question.Answers[answerIndex] == question.CorrectAnswer
+            ? "Correcta"
+            : "Incorrecta";
+    }
+
+    private async Task LoadQuestionAsync()
+    {
+        question = await Http.GetFromJsonAsync<Question>("api/questions");
+    }
+}
