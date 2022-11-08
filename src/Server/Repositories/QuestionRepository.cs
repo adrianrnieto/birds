@@ -13,6 +13,7 @@ namespace Birds.Server.Repositories
     {
         private readonly Random _random = new();
         private readonly IList<Question> _questions = new List<Question>
+
         {
             new Question
             {
@@ -24,7 +25,8 @@ namespace Birds.Server.Repositories
                     "Gaviota",
                     "Cuervo"
                 },
-                CorrectAnswer = "Gaviota"
+                CorrectAnswer = "Gaviota",
+                Difficulty = 2
             },
             new Question
             {
@@ -36,7 +38,9 @@ namespace Birds.Server.Repositories
                     "Gaviota",
                     "Cuervo"
                 },
-                CorrectAnswer = "Cuervo"
+                CorrectAnswer = "Cuervo",
+                Difficulty = 0
+
             },
             new Question
             {
@@ -48,7 +52,9 @@ namespace Birds.Server.Repositories
                     "Gaviota",
                     "Cuervo"
                 },
-                CorrectAnswer = "Estornino"
+                CorrectAnswer = "Estornino",
+                Difficulty = 1
+
             },
             new Question
             {
@@ -60,7 +66,8 @@ namespace Birds.Server.Repositories
                     "Gaviota",
                     "Cuervo"
                 },
-                CorrectAnswer = "Gorrión"
+                CorrectAnswer = "Gorrión",
+                Difficulty = 1
             },
             new Question
             {
@@ -72,7 +79,8 @@ namespace Birds.Server.Repositories
                     "Gaviota",
                     "Loro"
                 },
-                CorrectAnswer = "Loro"
+                CorrectAnswer = "Loro",
+                Difficulty = 0
             },
             new Question
             {
@@ -84,7 +92,8 @@ namespace Birds.Server.Repositories
                     "Gaviota",
                     "Cuervo"
                 },
-                CorrectAnswer = "Paloma"
+                CorrectAnswer = "Paloma",
+                Difficulty = 2
             },
             new Question
             {
@@ -96,7 +105,8 @@ namespace Birds.Server.Repositories
                     "Buho",
                     "Cuervo"
                 },
-                CorrectAnswer = "Buho"
+                CorrectAnswer = "Buho",
+                Difficulty = 1
             },
         };
 
