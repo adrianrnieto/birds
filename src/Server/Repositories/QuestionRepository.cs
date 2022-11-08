@@ -62,42 +62,6 @@ namespace Birds.Server.Repositories
                 },
                 CorrectAnswer = "Gorrión"
             },
-            new Question
-            {
-                ImageUrl = "https://img.lovepik.com/photo/20211201/medium/lovepik-parrot-picture_501344196.jpg",
-                Answers = new List<string>
-                {
-                    "Gorrión",
-                    "Estornino",
-                    "Gaviota",
-                    "Loro"
-                },
-                CorrectAnswer = "Loro"
-            },
-            new Question
-            {
-                ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/2/2a/Paloma_domestica_-_paloma_brav%C3%ADa_%28Columba_livia%29_refrescandose_en_un_charco_de_agua.JPG",
-                Answers = new List<string>
-                {
-                    "Gorrión",
-                    "Paloma",
-                    "Gaviota",
-                    "Cuervo"
-                },
-                CorrectAnswer = "Paloma"
-            },
-            new Question
-            {
-                ImageUrl = "https://farm8.staticflickr.com/7078/7190409204_2ded47622e_b.jpg",
-                Answers = new List<string>
-                {
-                    "Gorrión",
-                    "Estornino",
-                    "Buho",
-                    "Cuervo"
-                },
-                CorrectAnswer = "Buho"
-            },
         };
 
         public Question GetRandom()
