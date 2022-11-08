@@ -56,4 +56,4 @@ jobs:
           dotnet restore src/Server/Birds.Server.csproj
           dotnet build --no-restore src/Server/Birds.Server.csproj -c Release
       - name: Finish analysis
-        run: .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+        run: ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
