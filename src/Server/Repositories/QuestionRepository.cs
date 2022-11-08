@@ -52,7 +52,6 @@ namespace Birds.Server.Repositories
                 },
                 CorrectAnswer = "Estornino",
                 Difficulty = 1
-
             },
             new Question
             {
