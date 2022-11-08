@@ -39,7 +39,6 @@ namespace Birds.Server.Repositories
                 },
                 CorrectAnswer = "Cuervo",
                 Difficulty = 0
-
             },
             new Question
             {
