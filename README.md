@@ -6,4 +6,9 @@
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=adrianrnieto_birds&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=adrianrnieto_birds)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=adrianrnieto_birds&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=adrianrnieto_birds)
 
-# birds
+# Birds
+
+## Local Setup
+The recommendation is to install the following extensions for Visual Studio:
+* Fine Code Coverage
+* SpecFlow For Visual Studio
