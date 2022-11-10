@@ -25,7 +25,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Gaviota",
-                Difficulty = 2
+                Difficulty = Difficulties.High
             },
             new Question
             {
@@ -38,7 +38,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Cuervo",
-                Difficulty = 0
+                Difficulty = Difficulties.Low
             },
             new Question
             {
@@ -51,7 +51,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Estornino",
-                Difficulty = 1
+                Difficulty = Difficulties.Low
             },
             new Question
             {
@@ -64,7 +64,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Gorrión",
-                Difficulty = 1
+                Difficulty = Difficulties.Low
             },
             new Question
             {
@@ -77,7 +77,7 @@ namespace Birds.Server.Repositories
                     "Loro"
                 },
                 CorrectAnswer = "Loro",
-                Difficulty = 0
+                Difficulty = Difficulties.Low
             },
             new Question
             {
@@ -90,7 +90,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Paloma",
-                Difficulty = 2
+                Difficulty = Difficulties.Low
             },
             new Question
             {
@@ -103,7 +103,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Buho",
-                Difficulty = 1
+                Difficulty = Difficulties.Low
             },
         };
 

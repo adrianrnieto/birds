@@ -7,6 +7,6 @@ namespace Birds.Shared
         public string ImageUrl { get; set; }
         public IList<string> Answers { get; set; }
         public string CorrectAnswer { get; set; }
-        public int Difficulty { get; set; }
+        public Difficulties Difficulty { get; set; }
     }
 }
