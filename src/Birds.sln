@@ -7,19 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birds.Server", "Server\Bird
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birds.Client", "Client\Birds.Client.csproj", "{8F96F376-B0BA-4E59-A1DA-E12903CA214D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Birds.Client", "Client\Birds.Client.csproj", "{8F96F376-B0BA-4E59-A1DA-E12903CA214D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birds.Shared", "Shared\Birds.Shared.csproj", "{AD0E67D6-4F38-4508-8CFC-77411734910A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC20F69D-5DA9-4404-AD1D-5279AC24B261}"
+	ProjectSection(SolutionItems) = preProject
+		..\Directory.Build.props = ..\Directory.Build.props
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BAAFAE32-DA51-4198-BF17-09D720676A6C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birds.Unit.Tests", "..\test\Birds.Unit.Tests\Birds.Unit.Tests.csproj", "{B263F131-F438-455B-BF01-257640DEBBB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Birds.FunctionalIsolated", "..\test\Birds.FunctionalIsolated\Birds.FunctionalIsolated.csproj", "{F169699F-E7AD-4C58-B8D5-701CA686F133}"
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC20F69D-5DA9-4404-AD1D-5279AC24B261}"
-	ProjectSection(SolutionItems) = preProject
-		..\README.md = ..\README.md
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birds.FunctionalIsolated", "..\test\Birds.FunctionalIsolated\Birds.FunctionalIsolated.csproj", "{F169699F-E7AD-4C58-B8D5-701CA686F133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,12 +1,10 @@
-﻿using System.Collections.Generic;
-
-namespace Birds.Shared
+﻿namespace Birds.Shared
 {
     public class Question
     {
-        public string ImageUrl { get; set; }
-        public IList<string> Answers { get; set; }
-        public string CorrectAnswer { get; set; }
+        public string ImageUrl { get; set; } = default!;
+        public IList<string> Answers { get; set; } = default!;
+        public string CorrectAnswer { get; set; } = default!;
         public Difficulties Difficulty { get; set; }
     }
 }

@@ -1,9 +1,3 @@
-using Birds.Server.Controllers;
-using Birds.Server.Services;
-using Birds.Shared;
-using FluentAssertions;
-using Moq;
-
 namespace Birds.Unit.Tests.Controllers
 {
     public class QuestionsControllerTests
