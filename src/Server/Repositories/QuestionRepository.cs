@@ -13,7 +13,6 @@ namespace Birds.Server.Repositories
     {
         private readonly Random _random = new();
         private readonly IList<Question> _questions = new List<Question>
-
         {
             new Question
             {
@@ -53,8 +52,6 @@ namespace Birds.Server.Repositories
                 },
                 CorrectAnswer = "Estornino",
                 Difficulty = Difficulties.Low
-
-
             },
             new Question
             {
