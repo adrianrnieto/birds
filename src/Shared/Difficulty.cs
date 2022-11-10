@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Birds.Shared
 {
-    public enum Difficulty
+    public enum Difficulties
     {
-        low = 0,
-        medium = 1,
-        high = 2
+        Low = 0,
+        Medium = 1,
+        High = 2
     }
 }
 
