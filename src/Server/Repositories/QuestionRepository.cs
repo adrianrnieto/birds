@@ -13,6 +13,7 @@ namespace Birds.Server.Repositories
     {
         private readonly Random _random = new();
         private readonly IList<Question> _questions = new List<Question>
+
         {
             new Question
             {
@@ -25,7 +26,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Gaviota",
-                Difficulty = 2
+                Difficulty = Difficulty.high
             },
             new Question
             {
@@ -38,7 +39,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Cuervo",
-                Difficulty = 0
+                Difficulty = Difficulty.low
             },
             new Question
             {
@@ -51,7 +52,9 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Estornino",
-                Difficulty = 1
+                Difficulty = Difficulty.low
+
+
             },
             new Question
             {
@@ -64,7 +67,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Gorrión",
-                Difficulty = 1
+                Difficulty = Difficulty.low
             },
             new Question
             {
@@ -77,7 +80,7 @@ namespace Birds.Server.Repositories
                     "Loro"
                 },
                 CorrectAnswer = "Loro",
-                Difficulty = 0
+                Difficulty = Difficulty.low
             },
             new Question
             {
@@ -90,7 +93,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Paloma",
-                Difficulty = 2
+                Difficulty = Difficulty.low
             },
             new Question
             {
@@ -103,7 +106,7 @@ namespace Birds.Server.Repositories
                     "Cuervo"
                 },
                 CorrectAnswer = "Buho",
-                Difficulty = 1
+                Difficulty = Difficulty.low
             },
         };
 
