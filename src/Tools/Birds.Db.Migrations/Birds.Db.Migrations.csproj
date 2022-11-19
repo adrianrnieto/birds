@@ -4,8 +4,8 @@
     <TargetFramework>$(NetTargetVersion)</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <OutputType>exe</OutputType>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..\..</DockerfileContext>
+    <!-- Exclude the project from analysis -->
+    <SonarQubeExclude>true</SonarQubeExclude>
   </PropertyGroup>
   
   <ItemGroup>
