@@ -34,20 +34,18 @@ jobs:
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
         run: dotnet tool update dotnet-sonarscanner --tool-path ./.sonar/scanner
       - name: Install Report Generator
-        run: | #dotnet tool install --global coverlet.console
-          dotnet tool install --global dotnet-reportgenerator-globaltool          
+        run: dotnet tool install --global dotnet-reportgenerator-globaltool          
       - name: Start analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          #/d:sonar.coverageReportPaths=test/coverage/SonarQube.xml \
         run: |
           ./.sonar/scanner/dotnet-sonarscanner begin \
           /k:"adrianrnieto_birds" \
           /o:"adrianrnieto" \
           /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
           /d:sonar.host.url="https://sonarcloud.io" \
-          /d:sonar.cs.opencover.reportsPaths=test/coverage/SonarQube.xml \
+          /d:sonar.coverageReportPaths=test/coverage/SonarQube.xml \
           /d:sonar.qualitygate.wait=true
       - name: Build
         run: |
