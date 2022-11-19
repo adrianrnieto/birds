@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>$(NetTargetVersion)</TargetFramework>
+    <!-- Exclude the project from analysis -->
+    <SonarQubeExclude>true</SonarQubeExclude>
   </PropertyGroup>
 
   <ItemGroup>
