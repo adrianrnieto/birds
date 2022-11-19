@@ -1,6 +1,7 @@
 <Project>
   <PropertyGroup>
     <NetTargetVersion>net6.0</NetTargetVersion>
+    <DockerTargetOS>Linux</DockerTargetOS>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
