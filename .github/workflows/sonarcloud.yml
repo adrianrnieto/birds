@@ -39,7 +39,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          #/d:sonar.cs.opencover.reportsPaths=test/coverage/SonarQube.xml \
         run: |
           ./.sonar/scanner/dotnet-sonarscanner begin \
           /k:"adrianrnieto_birds" \
