@@ -105,6 +105,19 @@ namespace Birds.Server.Repositories
                 CorrectAnswer = "Buho",
                 Difficulty = Difficulties.Low
             },
+            new Question
+            {
+                ImageUrl = "https://eldeltadelebro.com/wp-content/uploads/2020/10/garza-real-delta-del-ebro.jpg",
+                Answers = new List<string>
+                {
+                    "Gorrión",
+                    "Estornino",
+                    "Garza",
+                    "Cuervo"
+                },
+                CorrectAnswer = "Garza",
+                Difficulty = Difficulties.Low
+            }
         };
 
         public Question GetRandom()
